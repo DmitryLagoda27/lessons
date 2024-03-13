@@ -1,0 +1,58 @@
+@import url("reset.css");
+/* Селектор зірочка — робить запит до УСІХ об'єктів на сторінці: */
+* {
+    background: #a09e9e;
+}
+/* Селектор тегу — запит по назві тегу: */
+img {
+    width: 300px;
+}
+/* Селектор класу — запит по назві класу */
+.header__item {
+    color: rgb(43, 4, 79);
+}
+/* Усі теги h2 першого рівня */
+.general > h2 {
+    color: #55512d;
+}
+/* Селектор id — запит по назві id */
+#culture {
+    color: #55512d;
+}
+/* Тег P який знаходяться безпосередньо далі по коду після об'єктів з класом culture__title та має той самий рівень вкладеності */
+.culture__title + p {
+    color: black;
+}
+/* Селектор атрибута — запит по назві атрибута */
+[class*="__title"] {
+    color: rgb(154, 17, 133);
+}
+
+/* Усі об'єкти з класом general__text всередині об' єктів з класом main__general*/
+.main__general .general__text {
+    color: brown;
+}
+/* Усі теги img всередині об'єктів з класом general__item  */
+.general__item img {
+    width: 50px;
+}
+.main__info-history {}
+/* Усі об'єкти всередині об' єктів з класом */
+.history * {
+    color: rgb(101, 34, 70);
+}
+.main__info-kitchen {}
+/* Усі теги P першого рівня (безпосередні) всередині об'єктів з класом .kitchen */
+.kitchen + p {
+    color: rgb(146, 50, 15);
+}
+/* Усі теги P які знаходяться далі по коду після об'єктів з класом travel__title та мають той самий рівень вкладеності  */
+.travel__title ~ p {
+    color: greenyellow;
+} 
+.footer__item{}
+/* Усі теги ol з класом footer__link */
+ol .footer__link {
+    color: rgb(60, 116, 5);
+}
+
