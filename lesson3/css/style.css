@@ -15,6 +15,9 @@ img {
 .general > h2 {
     color: #55512d;
 }
+.main__info a {
+    color: rgb(250, 7, 7);
+}
 /* Селектор id — запит по назві id */
 #culture {
     color: #55512d;
