@@ -1,0 +1,71 @@
+/* plagin gfonts */
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rock+3D:regular&display=swap);
+ @import url(https://fonts.googleapis.com/css?family=Rubik+Dirt:regular&display=swap);
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+   font-family: "SAIBA 45", sans-serif;
+    font-weight:  400;
+    font-size: 18px;
+    line-height: 150%;
+    font-style: normal;
+}
+.title {
+    font-family: "Rock 3D", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 2px #441010;
+    text-transform: uppercase;
+}
+.test__comingsoon {
+    font-family: "Coming Soon";
+    text-transform: capitalize;
+    color: #911b1b;
+    word-spacing: 10px;
+    text-align: right;
+    text-decoration: underline;
+}
+.test__truculenta {
+    font-family:"Truculenta", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: blue;
+    text-decoration: line-through;
+}
+.test__rubikdirt {
+    font-family:"Rubik Dirt", serif;
+    font-size: 24px;
+    text-transform: lowercase;
+    color: rgb(52, 89, 16);
+    text-shadow: -2px -2px 1px #5fef06;
+    text-align: center;
+}
+
+.model {
+    font-family: "proximanova", sans-serif;
+    color: #2B2929;    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+.howtochoose__title, .decoration__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;    
+}
+.howtochoose__title{
+     text-align: center;
+}
+.howtochoose__sub-title, .decoration__sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%; 
+}

@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "proximanova";
+	src: url("../fonts/proximanova_light.woff2") format("woff2");
+	src: url("../fonts/proximanova_regular.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "proximanova";
+	src: url("../fonts/proximanova_light.woff2") format("woff2");
+	src: url("../fonts/proximanova_bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: "proximanova";
+	src: url("../fonts/proximanova_light.woff2") format("woff2");
+	src: url("../fonts/proximanova_light.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+} 
+@font-face {
+	font-family: "armeniapedia-akhtamar";
+	src: url("../fonts/armeniapedia-akhtamar.woff2") format("woff2");
+	src: url("../fonts/armeniapedia-akhtamar.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "SAIBA-45";
+	src: url("../fonts/SAIBA-45-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
