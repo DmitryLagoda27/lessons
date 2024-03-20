@@ -69,7 +69,6 @@ font-weight: 600;
 }
 .howtochoose-bottom__item {
     padding-left: 50px;
-    padding-bottom: 20px;
 }
 .howtochoose-bottom__icon {
     display: inline-block;
@@ -77,7 +76,7 @@ font-weight: 600;
 .howtochoose-bottom__text {
     display: inline-block;
 }
-.wtochoose-bottom__item:not(:last-child) {
+.howtochoose-bottom__item:not(:last-child) {
     padding-bottom: 20px;
 }
 /* advantages */
