@@ -120,8 +120,10 @@ font-weight: 600;
 .ecommerce__container {
     background: rgba(30, 40, 50, 0.05);
     max-width: 1920px;
-    padding: 100px 280px;
+    padding: 100px 15%;
+    text-align: center;
     margin: 0 auto;
+   
 }
 .ecommerce__title {
 font-family: "Roboto", sans-serif ;
