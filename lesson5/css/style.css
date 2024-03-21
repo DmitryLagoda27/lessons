@@ -37,8 +37,8 @@ font-weight: 600;
 
 .header__logo {
     min-width: 320px;
-    padding-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 .howtochoose__container {
