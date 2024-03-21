@@ -55,7 +55,8 @@ font-weight: 600;
     max-width: 100%;
 }
 .howtochoose-top__text {
-    margin: 40px 0;
+    margin-top: 40px;
+   padding-bottom: 40px;
 }
 .howtochoose-top__text p {
     margin: 10px 0;
