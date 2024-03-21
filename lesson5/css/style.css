@@ -80,7 +80,7 @@ font-weight: 600;
     display: inline-block;
 }
 .howtochoose-bottom__item:not(:last-child) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 /* advantages */
 .advantages__container {
@@ -104,7 +104,7 @@ font-weight: 600;
     max-width: 300px;
     vertical-align: top;
     text-align: center;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 .advantages__icon {
     margin-bottom: 20px;
@@ -134,5 +134,5 @@ font-family: "Roboto", sans-serif ;
     margin-bottom: 60px;
 }
 .ecommerce__image {
-   padding: 0 5px; 
+   margin: 0 5px; 
 }
