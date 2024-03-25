@@ -29,20 +29,20 @@ body {
     max-width: 1440px;
     margin: 0 auto;
      background: 
-    url(/img/edy_pay/8.png) no-repeat 23.625rem -16px, 
-    url(/img/edy_pay/o.png) no-repeat 544px 110px,
-    url(/img/edy_pay/5.png) no-repeat 339px 216px,
-    url(/img/edy_pay/0.png) no-repeat 413px bottom,
-    url(/img/edy_pay/b.png) no-repeat 1163px 16px,
-    url(/img/edy_pay/m.png) no-repeat 670px 460px,
-    url(/img/edy_pay/x.png) no-repeat 639px 12px,
-    url(/img/edy_pay/k.png) no-repeat 832px 378px,
-    url(/img/edy_pay/p.png) no-repeat center 175px
+    url(../img/edy_pay/8.png) no-repeat 23.625rem -16px, 
+    url(../img/edy_pay/o.png) no-repeat 544px 110px,
+    url(../img/edy_pay/5.png) no-repeat 339px 216px,
+    url(../img/edy_pay/0.png) no-repeat 413px bottom,
+    url(../img/edy_pay/b.png) no-repeat 1163px 16px,
+    url(../img/edy_pay/m.png) no-repeat 670px 460px,
+    url(../img/edy_pay/x.png) no-repeat 639px 12px,
+    url(../img/edy_pay/k.png) no-repeat 832px 378px,
+    url(../img/edy_pay/p.png) no-repeat center 175px
     ; 
 }
 .explore__section {
   padding: 30px 0;
-  background:url(/img/edy_pay/holographic.png) no-repeat 0 0 / 100% 100%, #914CFF;  
+  background:url(../img/edy_pay/holographic.png) no-repeat 0 0 / 100% 100%, #914CFF;  
 }
 .explore__content {
     vertical-align: middle;
