@@ -18,7 +18,7 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1284px;
+    width: 100%;
     width: 100%;
     margin: 0 auto;
 }
