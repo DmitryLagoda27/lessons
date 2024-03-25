@@ -29,8 +29,9 @@ body {
   padding: 30px 0;  
 }
 .explore {
-     background: #914CFF, 
-     url(/img/edy_pay/holographic.png);  
+     background: , 
+     url(../img/edy_pay/holographic.png),
+         #914CFF;  
 }
 
  
