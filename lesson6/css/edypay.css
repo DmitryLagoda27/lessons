@@ -39,15 +39,12 @@ body {
     url(../img/edy_pay/x.png) no-repeat 639px 12px,
     url(../img/edy_pay/k.png) no-repeat 832px 378px,
     url(../img/edy_pay/p.png) no-repeat center 175px,
-    #914CFF
-    ; 
-    
-
+    #914CFF; 
 }
 
  
 .explore__container {
-   
+   max-width: 1440;
 }
 .explore__content {
     vertical-align: middle;
