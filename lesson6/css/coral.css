@@ -134,10 +134,10 @@ body {
 }
 /* zara section */
 .zara__section {
-    background: url(../img/ecommerce-img/zara/zara_logo.png) no-repeat right top ,
     url(../img/ecommerce-img/zara/background.jpg) no-repeat center;
 }
 .zara__container {
+    background: url(../img/ecommerce-img/zara/zara_logo.png) no-repeat right top;
     padding: 45px 5px 90px;
 }
 .zara__content {
