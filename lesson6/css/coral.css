@@ -51,10 +51,9 @@ body {
     font-weight: 400;
     font-size: 28px;
     color: #000;
-    background: url(/img/ecommerce-img/header/logo_group.svg) no-repeat right ,
-    url(/img/ecommerce-img/header/logo_group.svg) no-repeat left;
+    background: url(../img/ecommerce-img/header/logo_group.svg) no-repeat right ,
+    url(../img/ecommerce-img/header/logo_group.svg) no-repeat left;
     padding: 0 40px;
-    
 }
 .nav__list {
     text-align: center;
@@ -67,8 +66,8 @@ body {
 }
 /* hero section */
 .hero__section {
-    background:url(/img/ecommerce-img/hero/bgimg.svg) no-repeat left center,
-    url(/img/ecommerce-img/hero/bgimg2.png) no-repeat right center,
+    background:url(../img/ecommerce-img/hero/bgimg.svg) no-repeat left center,
+    url(../img/ecommerce-img/hero/bgimg2.png) no-repeat right center,
     rgba(30, 40, 50, 0.05);
 }
 .hero__container {
@@ -135,10 +134,8 @@ body {
 }
 /* zara section */
 .zara__section {
-    background: url(/img/ecommerce-img/zara/zara_logo.png) no-repeat right top ,
-
-    url(/img/ecommerce-img/zara/background.jpg) no-repeat center;
-    
+    background: url(../img/ecommerce-img/zara/zara_logo.png) no-repeat right top ,
+    url(../img/ecommerce-img/zara/background.jpg) no-repeat center;
 }
 .zara__container {
     padding: 45px 5px 90px;
