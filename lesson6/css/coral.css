@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap");
+
+@import url(reset.css);
+body {
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+[class*="__container"] {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.header {
+    background:rgba(30, 40, 50, 0.05);
+}
+.header__container {
+    padding:31px 5px 81px;
+}
+.header__elements { 
+    margin-bottom: 55px;
+    border-block-end: 1px solid rgb(160, 159, 159) ;
+}
+.header__element {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: capitalize;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 135px;
+}
+.header__element img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.account {
+    margin-right: 22px;
+}
+.header__logo {
+    font-family: "AmstelvarAlpha", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    background: url(/img/ecommerce-img/header/logo_group.svg) no-repeat right ,
+    url(/img/ecommerce-img/header/logo_group.svg) no-repeat left;
+    padding: 0 40px;
+    
+}
+.nav__list {
+    text-align: center;
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__item:not(:last-child){
+    margin-right: 52px;
+}
+/* hero section */
+.hero__section {
+    background:url(/img/ecommerce-img/hero/bgimg.svg) no-repeat left center,
+    url(/img/ecommerce-img/hero/bgimg2.png) no-repeat right center,
+    rgba(30, 40, 50, 0.05);
+}
+.hero__container {
+    font-family: "Roboto", sans-serif;
+    padding: 0 5px 60px;
+}
+.hero__content { 
+    padding-top: 74px;
+    padding-bottom: 124px;
+    margin-right: 98px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 686px;
+    width: 100%;
+   }
+.hero__title {
+    font-weight: 300;
+    font-size: 74px;
+    line-height: 74%;
+    margin-bottom: 52px;
+}
+.hero__subtitle {
+    font-size: 30px;
+    line-height: 183%;
+    margin-bottom: 66px;
+}
+.hero__button {
+    font-size: 29px;
+    color: #fff;
+    padding: 19px 26px;
+    background: #1e2832;
+}
+.hero__button img {
+    margin-right: 8px;
+}
+.hero__img {
+   display: inline-block;
+   max-width: 424px;
+   width: 100%;
+   height: 542px;
+   border: 2px solid rgba(0, 0, 0, 0.25);
+   border-radius: 160px 0;
+}
+.hero__image {
+    max-width: 424px;
+    width: 100%;
+    height: 542px;
+    border-radius: 160px 0;
+    margin-top: -20px;
+    margin-left: -18px;
+}
+/* brand section */
+.brand__container {
+    padding: 90px 5px 45px;
+}
+.brand__list {
+    text-align: center;
+}
+.brand__item:not(:last-child) {
+    margin-right: 72px;
+}
+.brand__item {
+    display: inline-block; 
+}
+/* zara section */
+.zara__section {
+    background: url(/img/ecommerce-img/zara/zara_logo.png) no-repeat right top ,
+
+    url(/img/ecommerce-img/zara/background.jpg) no-repeat center;
+    
+}
+.zara__container {
+    padding: 45px 5px 90px;
+}
+.zara__content {
+    max-width: 508px;
+    padding: 233px 0 90px;
+}
+.zara__image {
+    margin-bottom: 55px;
+}
+.zara__text {
+    font-size: 26px;
+    line-height: 154%;
+    margin-bottom: 55px;
+    color: #fff;
+}
+
+.zara__button {
+    font-size: 29px;
+    padding: 19px 26px;
+    background: #fff;
+}
+/* follow section */
+.follow__section {
+     background: rgba(30, 40, 50, 0.05);
+     margin: 0 auto;
+}
+.follow__container {
+    padding: 100px 0px;
+    text-align: center;
+}
+.follow__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 150%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.follow__images img {
+    margin: 0 8px 5px;
+    
+}
+/* footer */
+.footer__container {
+    padding: 30px 0px;
+}
+
+.footer__buttons {
+    padding: 30px;
+    text-align: center;
+}
+
+.footer__button {
+    font-weight: 600;
+    color: #fff;
+    background-color: #6a6464;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #6a6464;
+    padding: 12px 12px;
+    max-width: 160px;
+    width: 100%;
+    margin: 0 100px;
+}
