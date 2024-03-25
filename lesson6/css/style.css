@@ -89,7 +89,7 @@ font-weight: 600;
     margin-bottom: 35px;
 }
 .howtochoose-bottom__item {
-    background: url(/img/krovato/icon/mark.svg) no-repeat;
+    background: url(../img/krovato/icon/mark.svg) no-repeat;
     padding-left: 40px;
 }
 .howtochoose-bottom__text.howtochoose-bottom__icon {
