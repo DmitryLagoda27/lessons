@@ -12,7 +12,7 @@ color: #2B2929;
    
 }
 .page {
-   max-width: 1920px;
+   width: 100%;
    background-color:#F8F8F8;
    margin: 0 auto;
 }
