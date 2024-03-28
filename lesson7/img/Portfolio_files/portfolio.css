@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+
+@import url(reset.css);
+
+/* general style */
+body {
+    color: #fff;
+}
+.wrapper {
+    width: 100%;
+background-color: rgb(0, 0, 0);
+}
+
+[class*="__container"] {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+.header {}
+.page {}
+/* header style */
+.header__container {
+    padding: 60px 120px 30px;
+    
+    color: #fff;
+    text-align: center;
+}
+
+.header__logo {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 67%;
+    letter-spacing: -0.1em;
+    margin-right: 100px;
+}
+.header__nav {
+    font-family: "Orbitron", sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;  
+}
+.header__nav,
+.header__social,
+.header__logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header__list {   
+}
+.header__item {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 60px;
+}
+.header__item:last-child {
+    margin-right: 100px;
+}
+.header__link {
+}
+
+.header__social {}
+
+.social {}
+.social__link:not(:last-child) {
+    margin-right: 20px;
+}
+/* hero section */
+.page__container {}
+
+.hero {
+   padding:92px 62px 80px 120px; 
+   background: url(../img/portfolio/hero-section/ellipse_2.png) right bottom 80px no-repeat,
+                url(../img/portfolio/hero-section/ellipse_1.png) left top no-repeat;
+    
+}
+
+.hero__content {
+    
+}
+
+.content-hero {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    max-width: 584px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.content-hero__artist-name {
+    
+    font-weight: 400;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content-hero__artist-name::after {
+    content: "";
+    display: block;
+    widows: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(238, 8, 8, 0.9906337535014006) 8%, rgba(57, 242, 10, 1) 50%, rgba(19, 5, 251, 1) 98%);;
+
+}
+.content-hero__title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 87%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.content-hero__text {
+    
+    font-weight: 400;
+    line-height: 222%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.content-hero__button {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    background: #6f00a9;
+    padding: 15px 60px;
+    margin-bottom: 20px;
+}
+
+.hero__image {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.picture {
+    max-width: 100%;
+}
