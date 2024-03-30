@@ -747,7 +747,6 @@
 margin-right: 25px;
 }
 .advantages__item:hover{
-    border: 1px solid #66a227;
     background-color: #9f989821;
 }
 .advantages__icon {
