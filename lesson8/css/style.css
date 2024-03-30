@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:regular,700&display=swap");
+
+@import url(reset.css);
+body {
+    font-family: "Dancing+Script", sans-serif;
+}
+.main__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 0px;
+   
+}
+/* vector content */
+.content__vector {
+    font-size: 32px;
+    background-color: rgba(187, 191, 182, 0.506); 
+    border: 2px solid #000;
+    box-shadow: inset 20px 20px 16px #000000cd;
+    padding: 50px 10px;
+}
+.content__vector :last-of-type img {
+    background-color: rgba(54, 54, 87, 0.302);
+    border-radius: 50%;
+}
+.content__vector-item {
+    max-width: 550px;
+    margin: 0 auto;
+    border: 2px solid sienna;
+    border-radius: 20px;
+    background-color: #827e7e;
+    box-shadow: 5px 5px 5px #000000c2;
+    transition: all 0.5s ; 
+}
+
+.content__vector-item:not(:last-child) {
+ margin-bottom: 30px;
+}
+.content__vector-item:hover {
+    background-color: #bbb5b5;
+    border: 2px solid rgb(50, 25, 14);
+}
+.content__vector-image {
+    vertical-align: middle;
+    padding: 20px;
+    margin-right: 30px;
+    max-width: 140px;
+    transition: all 0.5s;
+}
+.content__vector-image:hover {
+    transform: translate(20%)
+}
+/* raster content */
+.content__raster {
+    font-size: 32px;
+    background-color: rgba(227, 156, 57, 0.799);
+    border: 2px solid #ff8800;
+    box-shadow: 20px 20px 16px #6c6a69;
+    padding: 50px 10px;
+    }
+.content__raster :first-of-type img  {
+    border-radius: 20px
+}
+.content__raster :nth-of-type(2) img {
+    border-radius: 20px
+}
+.content__raster-item {
+max-width: 1350px;
+    margin: 0 auto;
+    border: 2px solid sienna;
+    border-radius: 20px;
+    background-color: #916c2b93;
+    box-shadow: 5px 5px 5px #000000c2;
+    transition: all 0.5s;
+}
+.content__raster-item:hover {
+    border: 2px solid rgb(61, 30, 16);
+    background-color: #e0a540df;
+    box-shadow: 5px 5px 5px #00000089;
+}
+.content__raster-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.content__raster-image {
+    max-width: 600px;
+    vertical-align: middle;
+    transition: all 0.5s;
+}
+.content__raster-image:hover {
+transform: scale(1.05);
+}
+/* icon vector */
+.icon__vector {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 24px;
+    background-color: rgba(102, 168, 65, 0.799);
+    border: 2px solid #1e6d0a;
+    box-shadow: 20px 20px 16px #1a4405ae;
+    padding: 50px 10px;
+}
+
+.icon__vector-item {
+    border: 1px solid #607732;
+    box-shadow: 3px 3px 2px #1e6d0a;
+    border-radius: 8px;
+    padding-left: 40px;
+    min-height: 30px;
+    max-height: 30px;
+    transition: all 0.3s;
+}
+.icon__vector-item:hover{
+    border: 2px solid #0f2e0d;
+    box-shadow: 3px 3px 2px #0d0d0d;
+    transform: scale(1.03);
+}
+.icon__vector-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.icon__vector div:nth-child(1) {
+    background: url(../img/vector/arrow.svg) 0 0 / 30px no-repeat,
+    #31bc0e;
+}
+.icon__vector div:nth-child(2) {
+    background: url(../img/vector/arrowdown.svg) 0 0 / 30px no-repeat,
+        #31bc0ec6;
+}
+.icon__vector div:nth-child(3) {
+    background: url(../img/vector/question.svg) 3px 0 / 30px no-repeat,
+        #31bc0ec6;
+}
+.icon__vector div:nth-child(4) {
+    background: url(../img/vector/Vector.svg) 5px 0 / 16px no-repeat,
+        #31bc0ec6;
+}
+.icon__vector div:nth-child(5) {
+    background: url(../img/vector/Vector1.svg) 0 8px / 30px no-repeat,
+        #31bc0ec6;
+}
+/*  */
+.content__raster2x {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(149, 20, 145);
+    border: 2px solid #230239;
+    box-shadow: 20px 20px 16px  #2a0032dd;
+    padding: 50px 10px;
+    transition: all 0.5s;
+}
+.content__raster2x:hover {
+    transform: scale(2);
+}
