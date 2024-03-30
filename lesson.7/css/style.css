@@ -483,6 +483,10 @@
     padding: 15px 60px;
     margin-bottom: 20px;
 }
+.content-hero__button:hover{
+    background: #9c02ef;
+    transform: scale(1.03);
+}
 .hero__image {
     display: inline-block;
     vertical-align: top;
