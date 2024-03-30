@@ -493,6 +493,7 @@
 }
 .picture {
     max-width: 660px;
+    width: 100%;
 }
 /* about section */
 .about {
