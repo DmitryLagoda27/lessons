@@ -453,7 +453,7 @@
     margin-bottom: 20px;
     max-width: 150px;
 }
-.content-hero__artist-name ::after {
+.content-hero__artist-name::after {
     content: "";
     width: 115%;
     display: block;
