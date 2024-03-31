@@ -526,7 +526,7 @@
 }
 .about__title::after {
     content: "";
-    width: 60%;
+    width: 50%;
     display: block;
     height: 1px;
     background: linear-gradient(90deg, rgba(238, 8, 8, 0.9906337535014006) 8%, rgba(57, 242, 10, 1) 50%, rgba(19, 5, 251, 1) 98%);
@@ -591,7 +591,7 @@
 }
 .ready__title::after {
     content: "";
-    width: 80%;
+    width: 70%;
     display: block;
     height: 1px;
     background:
