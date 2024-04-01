@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Caprasimo:&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+Gurmukhi:300,500,700&display=swap");
 /* for krovato */
-@import url("../fonts");
+@import url(fonts.css);
 /* for portfolio */
 @import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
