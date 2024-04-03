@@ -1,5 +1,11 @@
 @import url(reset.css);
+@import url(fonts.css);
 
+body {
+    font-family: "proximanova", serif;
+    font-weight: 500;
+    font-size: 24px;
+}
 
 [class*="__container"] {
     max-width: 1230px;
