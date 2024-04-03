@@ -1,8 +1,0 @@
-@import url(reset.css);
-
-
-[class*="__container"] {
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0px 15px;
-}
