@@ -308,8 +308,10 @@ body {
   border-radius: 8px; 
   width: 100%; 
 background: url(../img/popular_categories/bg-card.svg) 0 100% / 100% no-repeat,
-    #fff;
-    
+    #fff; 
+}
+.card-categories__link:hover{
+    box-shadow: 5px 5px 10px #000000;
 }
 .card-categories__link::after {
     content: "";
