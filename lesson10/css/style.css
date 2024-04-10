@@ -76,6 +76,7 @@ body {
     padding: 11px 25px;
     background-color:#FFBC57;
     border-radius: 8px;
+    color: #fff;
 }
 .button__link::before {
     content: "";
@@ -84,6 +85,13 @@ body {
     height: 24px;
     margin-right: 10px;
     vertical-align: middle;
+    transition: all 0.5s;
+}
+.button__link:hover{
+    background-color: #f7ac3c;
+}
+.button__link:hover::before  {
+     transform: rotate(360deg) scale(1.2);
 }
 
 .search {}
@@ -218,10 +226,12 @@ body {
     vertical-align: middle;
     position: absolute;
     right:  15px;
-    top: 18px
+    top: 18px;
+    transition: all 0.5s;
 }
 .menu__link:hover::after {
     background: url(../img/arrow1.svg) 0 0 no-repeat;
+    transform: scale(1.5)
 }
 .sub-menu {
     display: none;
