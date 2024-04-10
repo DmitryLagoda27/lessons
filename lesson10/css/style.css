@@ -187,7 +187,7 @@ body {
 
 .menu__item {
     width: 100%;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .menu__item:hover .sub-menu{
@@ -239,7 +239,7 @@ body {
 .sub-menu__list {
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .sub-menu__item {
