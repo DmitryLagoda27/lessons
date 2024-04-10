@@ -239,6 +239,7 @@ body {
 .sub-menu__list {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .sub-menu__item {
