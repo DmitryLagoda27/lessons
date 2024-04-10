@@ -241,7 +241,15 @@ body {
     position: relative;
     overflow-y: auto;
 }
-
+.sub-menu__list::before{
+    content: "";
+    position: absolute;
+    border-left: 5px solid #ffbc57;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    left: 0;
+    }
 .sub-menu__item {
     padding: 15px 15px ;
     background-color: #fff;
@@ -250,7 +258,6 @@ body {
      background-color: #FFBC57;
 }
 .sub-menu__link {
-    
     font-size: 19px;
     line-height: 1.2;
 }
