@@ -258,13 +258,15 @@ text-decoration: underline;
 }
 
 .sub-menu__item {
-    padding: 15px 15px ;
+    
     background-color: #fff;
 }
 .sub-menu__item:hover {
      background-color: #FFBC57;
 }
 .sub-menu__link {
+    width: 100%;
+    padding: 15px 15px ;
     font-size: 19px;
     line-height: 1.2;
 }
