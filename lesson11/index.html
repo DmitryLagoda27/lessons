@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson11</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header header--fixed">
+        <div class="header__container">
+            <div class="header__logo logo">
+                <p class="logo__text">Freelanser
+                    <span class="logo__decor">
+                        Lesson11
+                    </span>
+                </p>
+            </div>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link">2D Трансформації</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">3D Трансформації</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Passat B5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__container">
+            <h1 class="page__title">Трансформації</h1>
+            <h2 class="page__sub-title">2D Трансформації</h2>
+            <div class="page__blocks-2d block">
+                <div class="block__item">
+                    <div class="block__element element-translatex">
+                        element-translate translate(20px, 20px)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-translatey">
+                        element-translatetranslate(-20px, -20px)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-scalex">
+                        element-scale scale(1.1)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-scaley">
+                        element-scale scale(0.9, 0.8)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-rotatex">
+                        element-rotate rotate(120deg)
+                    </div>
+                </div>
+            </div>
+            <div class="page__blocks-2d block">
+                <div class="block__item">
+                    <div class="block__element element-rotatey">
+                        element-rotate rotate(-250deg)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-skewx">
+                        element_skew skew(30deg)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-skewy">
+                        element_skew skew(-30deg, -20deg)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-matrix">
+                        element-matrix matrix (1.2,0.5,1,2,5,30)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-many-tr">
+                        element-many-t translate (20px,-30px) scale(1.2) rotate(360deg)
+                    </div>
+                </div>
+            </div>
+            <div class="page__blocks-2d block">
+                <div class="block__item">
+                    <div class="block__element element-originx">
+                        element-origin -50px 100px;
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-origin">
+                        element-origin top left
+                    </div>
+                </div>
+                <div class="block__item ">
+                    <div class="block__element element-matrixx">
+                        element-matrixx matrix (1.5,0.3,-0.7, -1.2,20,10)
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__element element-originy">
+                        element-origin
+                    </div>
+                </div>
+                <div class="block__item ">
+                    <div class="block__element element-many-tra">
+                        element-many-tra
+                    </div>
+                </div>
+            </div>
+            <h2 class="page__sub-title">3D Трансформації</h2>
+            <div class="page__blocks-3d  block-perspective">
+                <div class="block-perspective__item">
+                    <div class="block-perspective__element perspective-rotate ">
+                        element-perspective-rotateX rotateX(35deg)
+                    </div>
+                </div>
+                <div class="block-perspective__item ">
+                    <div class="block-perspective__element perspective-rotatex ">
+                        element-perspective-rotateY rotateY(55deg);
+                    </div>
+                </div>
+                <div class="block-perspective__item block-perspective__item--left ">
+                    <div class="block-perspective__element block-perspective__element--left">
+                        perspective-rotate-left rotateX(75deg) perspective: 200px;
+                    </div>
+                </div>
+                <div class="block-perspective__item block-perspective__item--right">
+                    <div class="block-perspective__element block-perspective__element--right">
+                        perspective-rotate-right perspective: 300px transform: rotateX(75deg);
+                    </div>
+                </div>
+                <div class="block-perspective__item">
+                    <div class="block-perspective__element perspective-rotatexy">
+                        perspective-rotatexy rotateX(360deg)
+                    </div>
+                </div>
+            </div>
+            <div class="page__blocks-3d  block-perspective">
+                <div class="block-perspective__item">
+                    <div class="block-perspective__element translate3d ">
+                        translate3d translate3d (-20px, 20px, 20px)
+                    </div>
+                </div>
+                <div class="block-perspective__item ">
+                    <div class="block-perspective__element scale3d">
+                        scale3d scale3d(1.2, 1.2, -1.2)
+                    </div>
+                </div>
+                <div class="block-perspective__item ">
+                    <div class="block-perspective__element rotate3d">
+                        rotate3d rotate3d (2, 2, -2, 70deg)
+                    </div>
+                </div>
+                <div class="block-perspective__item ">
+                    <div class="block-perspective__element  matrix3d">
+                        matrix3d matrix3d (0.866, 1, 0.5,0,0,1,
+                        1.2,0,-0.5,
+                        5,0.866,0,10,
+                        5,0.7,1)
+                        нічого не розумів!!
+                    </div>
+                </div>
+                <div class="block-perspective__item">
+                    <div class="block-perspective__element many3d ">
+                        many3d translate3d(30px, 30px, 50px) rotate3d(1, 0.5, 0.5, -30deg);
+                    </div>
+                </div>
+            </div>
+            <div class="page__blocks-3d  block-perspective">
+                <div class="block-perspective__item block-perspective__item--3d ">
+                    <div class="block-perspective__element  front">
+                        front
+                    </div>
+                    <div class="block-perspective__element back">
+                        back
+                    </div>
+                </div>
+                <div class="block-perspective__item block-perspective__item--3d">
+                    <div class="block-perspective__element preserve3d ">
+                        preserve-3d rotateY(80deg) translate(30px, 30px)
+                    </div>
+                </div>
+            </div>
+            <div class="page__section passat">
+                <div class="passat__body">
+                    <div class="passat__wheels wheels">
+                        <div class="wheels__tire tire">
+                            <div class="tire__element1"></div>
+                            <div class="tire__element2"></div>
+                            <div class="tire__element3"></div>
+                            <div class="tire__element4"></div>
+                            <div class="tire__element5"></div>
+                            <div class="tire__element6"></div>
+                            <div class="tire__element7"></div>
+                            <div class="tire__element8"></div>
+                            <div class="tire__element9"></div>
+                            <div class="tire__element10"></div>
+                            <div class="tire__element11"></div>
+                        </div>
+
+                    </div>
+                    <div class="passat__wheels2 wheels">
+                        <div class="wheels__tire tire">
+                            <div class="tire__element1"></div>
+                            <div class="tire__element2"></div>
+                            <div class="tire__element3"></div>
+                            <div class="tire__element4"></div>
+                            <div class="tire__element5"></div>
+                            <div class="tire__element6"></div>
+                            <div class="tire__element7"></div>
+                            <div class="tire__element8"></div>
+                            <div class="tire__element9"></div>
+                            <div class="tire__element10"></div>
+                            <div class="tire__element11"></div>
+                        </div>
+                    </div>
+                    <div class="passat__bottom bottom">
+                        <div class="bottom__element1"></div>
+                        <div class="bottom__element2"></div>
+                        <div class="bottom__element3"></div>
+                        <div class="bottom__element4"></div>
+                        <div class="bottom__element5"></div>
+                        <div class="bottom__element6"></div>
+                        <div class="bottom__element7"></div>
+                        <div class="bottom__element8"></div>
+                        <div class="bottom__element9"></div>
+                        <div class="bottom__element10"></div>
+                        <div class="bottom__element11"></div>
+                        <div class="bottom__element12"></div>
+                        <div class="bottom__element13"></div>
+                        <div class="bottom__element14"></div>
+                        <div class="bottom__element15"></div>
+                        <div class="bottom__element16"></div>
+                        <div class="bottom__element17"></div>
+                        <div class="bottom__element18"></div>
+                        <div class="bottom__element19"></div>
+                        <div class="bottom__element20"></div>
+                        <div class="bottom__element21"></div>
+                        <div class="bottom__element22"></div>
+                        <div class="bottom__element23"></div>
+                        <div class="bottom__element24"></div>
+                        <div class="bottom__element25"></div>
+                        <div class="bottom__element26"></div>
+                        <div class="bottom__element27"></div>
+                        <div class="bottom__element28"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__button" href="#header">повернутися на верх</a>
+        </div>
+    </footer>
+</body>
+
+</html>
