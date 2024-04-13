@@ -25,6 +25,7 @@ body {
    top: 0;
    left: 0;
 background: linear-gradient(90deg, rgba(53, 196, 17, 0.9396751740139211) 11%, rgba(20, 21, 228, 0.8793503480278422) 92%);
+    z-index: 99;
 }
 .header__container {
     padding: 20px 5px;
