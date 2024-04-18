@@ -1,0 +1,686 @@
+
+@import url("https://fonts.googleapis.com/css?family=Protest+Revolution:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nova+Square:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:300,regular,700&display=swap");
+
+@import url(reset.css);
+@import url(passat.css);
+@import url(keyframes.css);
+
+body {
+    font-family: "Protest+Revolution", sans-serif;
+    font-weight: 500;
+    font-size: 0;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 1px;
+}
+.wrapper {
+    font-size: 24px;
+    overflow: clip;
+
+}
+/* header */
+
+.header {}
+
+.header__container {
+     text-align: center;
+     padding: 40px;
+     font-size: 42px;
+     background-color: #f10a0a;
+}
+
+/* main */
+.main {
+   
+}
+.main__container {
+    background: url(../img/poliana1.jpg) 200% / 100% repeat-x;
+    animation:background-change 22s ;
+}
+
+.main__animation{
+    overflow: clip;
+     position: relative;
+    min-height: 800px;
+    height: 100%;
+    width: 100%;   
+}
+.main__animation {
+    position: relative;
+}
+.animation {}
+
+.animation__sun {}
+
+.sun {}
+.sun__body {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: radial-gradient(circle, rgba(255, 254, 228, 1) 0%, rgba(255, 244, 0, 1) 100%);
+    border: 10px dashed #fadd00;
+    /* box-shadow: 0 0 150px #ffe102; */
+    padding: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: rotate 19s  linear infinite, suny-shadow 12s linear infinite;
+}
+@keyframes suny-shadow{
+    0%{
+    box-shadow: 0 0 50px #ffe102;
+    background: radial-gradient(circle, rgba(255, 242, 228, 1) 1%, rgba(246, 227, 4, 1) 68%);
+    }
+    30%{
+        box-shadow: 0 0 70px #e1ff00;
+        background: radial-gradient(circle, rgba(255, 242, 228, 1) 1%, rgba(246, 227, 4, 1) 68%);
+    }
+    60%{
+        box-shadow: 0 0 90px #ffe600;
+            background: radial-gradient(circle, rgba(255, 242, 228, 1) 9%, rgba(246, 215, 4, 1) 67%);
+    }
+    100%{
+        box-shadow: 0 0 120px #f1f901;
+        background: radial-gradient(circle, rgba(255, 242, 228, 1) 9%, rgba(246, 227, 4, 1) 80%);
+    }
+}
+.sun__body:hover {
+    animation:paused ;
+}
+/* decor */
+
+.animation__decor {}
+
+.decor {}
+/* coster */
+.decor__fire {
+    position: absolute;
+    left: 700px;
+     top: 70%;
+    width: 120px;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 39s forwards;
+}
+.decor__meatandfire {
+    position: absolute;
+    left: 680px;
+    top: 67%;
+    width: 170px; 
+    opacity: 0;
+    animation: text-opaciti 9s 1 45s linear forwards;
+    }
+/* poliana */
+.decor__table {
+position: absolute;
+    left:50px ;
+    top: 50%;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 22s linear forwards;
+}
+.decor__pizza {
+    position: absolute;
+    left: 180px;
+    top: 73%;
+    width: 120px;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 37s linear forwards ;
+}
+.decor__drink {
+    position: absolute;
+    left: 290px;
+    top: 70%;
+     width: 120px;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 38s linear forwards;
+    }
+.decor__meat {
+    position: absolute;
+    left: 330px;
+    top: 78%;
+    width: 130px;
+    transform: rotate(-40deg);
+    opacity: 0;
+    animation: text-opaciti 5s 1 52s linear forwards;
+    }
+.decor__beer {
+    position: absolute;
+    left: 210px;
+    top: 80%;
+    width: 120px;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 39s linear forwards;
+    }
+
+/* pepa */
+.hero-animation__pepa {
+    position: absolute;
+    left:40px ;
+    top: 75%;
+    z-index: 1;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 22s linear forwards;
+}
+.pepa::before {
+    content: "";
+    position: absolute;
+    background: url(../img/griled_meat-removebg-preview.png) 0 0/ 100% no-repeat;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    transform: rotate(-20deg);
+    opacity: 0;
+    animation: hero-opaciti 3s 1 53s linear forwards;
+}
+.pepa__image {
+    width: 150px;
+    
+}
+.pepa__dialog {}
+
+.pepa__text {
+    position: absolute;
+    top: -70px;
+    left: -40px;
+    width: 160px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(-24deg);
+    font-size: 20px;
+     opacity: 0;
+    animation: text-opaciti 4s 1 26s;
+}
+.pepa__text2 {
+    position: absolute;
+    font-weight: 600;
+    top: -130px;
+    left: 120px;
+    width: 160px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(-15deg) rotate(-24deg);
+    font-size: 20px;
+    opacity: 0;
+    animation: text-opaciti 10s 1 55s;
+}
+/* daria */
+.hero-animation__dasha {
+position: absolute;
+    left: 400px;
+    top: 60%;
+    opacity: 0;
+    animation: hero-opaciti 3s 1 22s linear forwards;
+}
+.dasha::before {
+    content: "";
+    position: absolute;
+    background: url(../img/griled_meat-removebg-preview.png) 0 0/ 100% no-repeat;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 15px;
+    transform: rotate(-80deg);
+    opacity: 0;
+    animation: hero-opaciti 3s 1 53s linear forwards;   
+}
+.dasha__image {
+width: 110px;
+}
+.dasha__dialog {}
+
+.dasha__text {
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(24deg);
+    font-size: 20px;
+     opacity: 0;
+    animation: text-opaciti 4s 1 28s ;
+}
+.dasha__text2 {
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    width: 160px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(24deg);
+    font-size: 20px;
+    opacity: 0;
+     animation: text-opaciti 4s 1 42s;
+}
+.dasha__text3 {
+    position: absolute;
+        top: -90px;
+        left: -100px;
+        width: 160px;
+        height: 80px;
+        padding: 10px;
+        border: 1px solid #000;
+        background-color: aliceblue;
+        border-radius: 20px;
+        transform: skew(10deg) rotate(24deg);
+        font-size: 20px;
+        opacity: 0;
+        animation: text-opaciti 10s 1 54s;
+}
+/* supperman */
+.hero-animation__superman {
+    position: absolute;
+    left: 850px;
+    top: 70%;
+    transform: rotatey(180deg);
+    z-index: 6;
+    /* animation: superman__tranlate 3s 1 1s linear forwards, superman__translate2 4s 1 5s linear forwards; */
+    opacity: 0;
+     animation: hero-opaciti 3s 1 23s linear forwards, superman__tranlate 3s 1 34s linear forwards, superman__translate2 4s 1 48s linear forwards ;
+}
+.hero-animation__superman::before{ 
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background: url(../img/veter-removebg-preview.png) 0 0 / 100% no-repeat ;
+    width: 90px;
+    height: 70px;
+    transform: rotate(25deg);
+     opacity: 0;
+    animation: translate-wind 2s 3 37s linear ;
+}
+.hero-animation__superman::after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 35px;
+    background: url(../img/grilled-kebab-photoroom-removebg-preview.png) 0 0 / 100% no-repeat;
+    width: 90px;
+    height: 70px;
+    transform: rotate(1deg);
+    opacity: 0;
+    animation: text-opaciti 4s 1 48s;
+}
+.superman__image{
+width: 200px;
+}
+.superman__dialog::before {
+    content: "";
+    position: absolute;
+    background: url(../img/griled_meat-removebg-preview.png) 0 0/ 100% no-repeat;
+    width: 100px;
+    height: 100px;
+    left: 120px;
+    top: 10px;
+    transform: rotate(-20deg);
+    opacity: 0;
+    animation: hero-opaciti 4s 1 54s linear forwards;
+}
+.superman__dialog {}
+.superman__text {
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 160px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(15deg) ;
+    font-size: 20px;
+    transform: rotatey(-180deg) skew(-10deg);
+    opacity: 0;
+     animation: text-opaciti 4s 1 33s linear  ;
+}
+.superman__text2 {
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 160px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(15deg);
+    font-size: 20px;
+    transform: rotatey(-180deg) skew(-10deg);
+    opacity: 0;
+    animation: text-opaciti 4s 1 40s linear;
+}
+.superman__text3{
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 160px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(15deg);
+    font-size: 20px;
+    transform: rotatey(-180deg) skew(-10deg);
+     opacity: 0;
+    animation: text-opaciti 3s 1 44s linear;
+}
+.superman__text4 {
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 160px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(15deg);
+    font-size: 20px;
+    transform: rotatey(-180deg) skew(-10deg);
+    opacity: 0;
+    animation: text-opaciti 3s 1 47s linear;  
+}
+.superman__text5{
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    width: 160px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(20deg) rotatey(180deg);
+    font-size: 20px;
+    opacity: 0;
+    animation: text-opaciti 10s 1 54s;
+}
+/* crazy frog */
+.hero-animation__crazy-fr {
+    position: absolute;
+    left: 750px;
+    top: 60%;
+    animation:frog-translate 3s 1 3s linear forwards; 
+    z-index: 0;
+    opacity: 0;
+    animation:hero-opaciti 3s 1 23s linear forwards, frog-translate 3s 1 34s linear forwards;
+}
+
+.crazy-fr::before {
+    content: "";
+    position: absolute;
+    background: url(../img/griled_meat-removebg-preview.png) 0 0/ 100% no-repeat;
+    width: 100px;
+    height: 100px;
+    left: 115px;
+    top: 40px;
+    transform: rotate(-20deg);
+    opacity: 0;
+    animation: hero-opaciti 3s 1 54s linear forwards; 
+}
+.crazy-fr__image {
+width: 150px;
+}
+.crazy-fr__dialog {}
+.crazy-fr__text {
+    position: absolute;
+    top: -40px;
+    left: 120px;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(-15deg) rotate(-24deg);
+    font-size: 20px;
+    opacity: 0; 
+    animation: text-opaciti 4s 1 31s;
+}
+.crazy-fr__text2 {
+position: absolute;
+    top: -40px;
+    left: 120px;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(-15deg) rotate(-24deg);
+    font-size: 20px;
+    opacity: 0;
+        animation: text-opaciti 4s 1 35s;
+}
+.crazy-fr__text3 {
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    width: 160px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(24deg);
+    font-size: 20px;
+    opacity: 0;
+    animation: text-opaciti 10s 1 54s;
+}
+.animation__the-end {
+    position: absolute;
+    background: #000000ad;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+    animation: text-opaciti 30s 1 60s linear ;
+
+}
+
+.animation__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    height: 300px;
+    animation: picture-end 5s linear infinite alternate;
+}
+
+
+.animation__image {
+    width: 100%;
+
+}
+
+.animation__end-text {
+    display: block;
+    padding: 120px;
+    font-size: 64px;
+    text-align: center;
+
+}
+
+@keyframes picture-end {
+    0% {
+        transform: translate(10%, 100%) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(600px, 0px) rotate(180deg);
+    }
+
+    65% {
+        transform: translate(1000px, 500px) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(10px, 700px) rotate(360deg);
+    }
+}
+/* passat section */
+.passat {    
+}
+.passat__body {
+    position: absolute;
+    right: -350px;
+    bottom: 0;
+    max-width: 800px;
+    width: 100%;
+    max-height: 280px;
+    height: 500px;
+    margin: 0 auto;
+    animation: translate-auto 10s 2.3 linear ; 
+}
+.passat__body:hover {
+    animation-play-state: paused;
+}
+/* passat  hero */
+/* passat frog */
+.hero__frog {
+    position: absolute;
+    left: 300px;
+    top:60px;
+    opacity: 0;
+    animation: text-opaciti 22s 1 3s;
+}
+.frog {width: 100%;}
+.frog__image{
+    max-width: 150px;
+}
+.frog__dialog {
+
+}
+.frog__text2,
+.frog__text {
+   position: absolute;
+top: -90px;
+    left: -100px;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(24deg);  
+    font-size: 20px;
+    opacity: 0;
+    animation: text-opaciti 5s 1 3s ;
+}
+.frog__text2 {
+    animation: text-opaciti 4s 1 14s;
+}
+/* passat super-man */
+.hero__super-man {
+    position: absolute;
+top: -300px;
+left: 300px;
+}
+.super-man {
+}
+.super-man__image {
+max-width: 350px;
+transform: rotate(-20deg) skew(10deg);
+opacity: 0;
+animation: text-opaciti 22s 1 3s;
+}
+.super-man__dialog {}
+.super-man__text {
+    position: absolute;
+    top:0;
+    left: -100px;
+    width: 160px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transform: skew(10deg) rotate(24deg);
+    font-size: 18px;
+    opacity: 0;
+    animation: text-opaciti 4s 1 5s;
+}
+.super-man__text2{
+    position: absolute;
+        top: 0;
+        left: -100px;
+        width: 160px;
+        height: 120px;
+        padding: 10px;
+        border: 1px solid #000;
+        background-color: aliceblue;
+        border-radius: 20px;
+        transform: skew(10deg) rotate(24deg);
+        font-size: 18px;
+        opacity: 0;
+        animation: text-opaciti 4s 1 13S;
+}
+
+/* passat weels */
+/* .passat__wheels2, */
+.passat__wheels {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    max-width: 70px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
+    z-index: 2;
+    animation: rotate 2s 12  linear ;
+}
+/* .passat:hover .passat__body .passat__wheels2,
+.passat:hover .passat__body .passat__wheels{
+transform: rotate(-860deg) ;} */
+.passat__wheels2 {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    max-width: 70px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
+    z-index: 2;
+animation: rotate 2s 12 linear;
+}
+/* end */
+.animation__end-text {}
+
+
+/* footer */
+.footer {}
+
+.footer__container {
+    background-color: #1aff00;
+    border:2px solid #000;
+    color: blue;
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+    padding: 12px;
+
+}
+
+.footer__button {
+
+}

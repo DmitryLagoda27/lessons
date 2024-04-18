@@ -1,0 +1,118 @@
+@keyframes background-change {
+    0% {
+        background: url(../img/natural-image.jpg) 200% / 100% repeat-x;
+    }
+    95% {
+        background: url(../img/natural-image.jpg) 200% / 100% repeat-x;
+    }
+    100% {
+        background: url(../img/poliana1.jpg) 200% / 100% repeat-x;
+    }
+}
+
+@keyframes superman__tranlate {
+    0% {
+        transform: translate(2px 0px);
+    }
+    50% {
+        transform: translate(-250px, -40px);
+    }
+    100% {
+        transform: translate(0px, -180px) rotatey(180deg);
+    }
+}
+@keyframes superman__translate2 {
+    0% {
+        transform: translate(2px 0px);
+    }
+
+    50% {
+        
+    }
+
+    100% {
+        transform: translate(-450px, -50px) rotatey(180deg) ;
+    }
+}
+
+@keyframes translate-wind {
+    0% {
+        transform: translate(0) rotate(25deg) scale(0.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(70%, 30%) rotate(25deg) scale(0.7);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(120%, 60%) rotate(25deg) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes frog-translate {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-620px, -70px);
+    }
+}
+
+@keyframes translate-auto {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(-250%);
+    }
+}
+
+@keyframes hero-opaciti {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0, 5;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-opaciti {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
