@@ -364,7 +364,7 @@ width: 200px;
     font-size: 20px;
     transform: rotatey(-180deg) skew(-10deg);
     opacity: 0;
-    animation: text-opaciti 4s 1 40s linear;
+    animation: text-opaciti 3s 1 39s linear;
 }
 .superman__text3{
     position: absolute;
@@ -380,7 +380,7 @@ width: 200px;
     font-size: 20px;
     transform: rotatey(-180deg) skew(-10deg);
      opacity: 0;
-    animation: text-opaciti 3s 1 44s linear;
+    animation: text-opaciti 3s 1 43s linear;
 }
 .superman__text4 {
     position: absolute;
@@ -396,7 +396,7 @@ width: 200px;
     font-size: 20px;
     transform: rotatey(-180deg) skew(-10deg);
     opacity: 0;
-    animation: text-opaciti 3s 1 47s linear;  
+    animation: text-opaciti 3s 1 48s linear;  
 }
 .superman__text5{
     position: absolute;
@@ -585,10 +585,10 @@ top: -90px;
     transform: skew(10deg) rotate(24deg);  
     font-size: 20px;
     opacity: 0;
-    animation: text-opaciti 5s 1 3s ;
+    animation: text-opaciti 4s 1 2s ;
 }
 .frog__text2 {
-    animation: text-opaciti 4s 1 14s;
+    animation: text-opaciti 3s 1 13s;
 }
 /* passat super-man */
 .hero__super-man {
@@ -618,7 +618,7 @@ animation: text-opaciti 22s 1 3s;
     transform: skew(10deg) rotate(24deg);
     font-size: 18px;
     opacity: 0;
-    animation: text-opaciti 4s 1 5s;
+    animation: text-opaciti 4s 1 4s;
 }
 .super-man__text2{
     position: absolute;
@@ -633,7 +633,7 @@ animation: text-opaciti 22s 1 3s;
         transform: skew(10deg) rotate(24deg);
         font-size: 18px;
         opacity: 0;
-        animation: text-opaciti 4s 1 13S;
+        animation: text-opaciti 3s 1 12S;
 }
 
 /* passat weels */
