@@ -63,6 +63,7 @@ body {
 .form__label {
   font-size: 22px;
   flex: 1 1 auto;
+cursor: pointer;
 }
 .form__input {
     background-color: rgb(180, 177, 172);
@@ -325,6 +326,9 @@ body {
 .delivery-section__check-label img {
     max-width: 40px; 
 }
+.delivery-section__check-label:hover {
+   background-color: #67625847;
+}
 .delivery-section__check-text {
     font-weight: 400;
     font-size: 15px;
@@ -447,6 +451,9 @@ cursor: pointer;
     transition: all 0.3s;
     margin-right: 10px;
     /* vertical-align: middle; */
+}
+.payment__radio-text:hover {
+    text-decoration: 2px underline;
 }
 .payment__radio-input:checked+.payment__radio-text::before {
     background: #f19100 url(../img/rb.svg) 0 0 /cover no-repeat;
