@@ -238,14 +238,15 @@ body {
 .form-h__item {
     display: flex;
     flex-direction: column;
+    flex: 1 1 325px;
     gap: 20px;
 }
 .form-h__input {
     border: 1px solid #d1d5d5;
     border-radius: 8px;
     padding: 10px 20px;
-    width: 325px;
-    height: 50px;
+/*     width: 325px;
+    height: 50px; */
 }
 .payment__radio-input,
 .delivery-section__check-input,
