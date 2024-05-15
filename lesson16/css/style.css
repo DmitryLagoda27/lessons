@@ -637,8 +637,7 @@ gap: 10px;
         margin-bottom: 0px;
         border-bottom: 2px solid  #ffffff ;
     }
-    .navigation-header__container,
-   .info-header__container{
+    .navigation-header__container{
     flex-direction: column;
     
    }
