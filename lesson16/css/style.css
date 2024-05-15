@@ -596,7 +596,7 @@ gap: 10px;
         border: 1px solid #000;
         border-radius: 8px;
         z-index: 1;
-        padding-top:  120px;
+        padding-top:  150px;
         overflow: auto;
         transition: all 0.5s;
     }
@@ -805,7 +805,8 @@ gap: 10px;
     width: 90%;
   }
 
-}   
+}   
+
 /* general section */
  .general-header__menu-icon::before {
      top: 0;
