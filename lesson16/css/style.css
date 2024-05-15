@@ -1110,19 +1110,29 @@ gap: 10px;
         padding-top: 110px;
         margin-bottom: 50px;
     }
-
     .popular-categories {
         margin-bottom: 50px;
     }
-
     .main__popular-products {
         margin-bottom: 50px;
     }
+    .popular-categories__title,
+    .shares-section__heading--heading,
+    .products__section--heading {
+        margin-bottom: 25px;
+        font-size: 32px;
+            
+        }
 }
 @media (max-width: 600px) {
     .baner {
-        padding-top: 160px;
-       
+        padding-top: 160px;      
+    }
+    .popular-categories__title,
+    .shares-section__heading--heading,
+    .products__section--heading {
+        margin-bottom: 20px;
+        font-size: 28px;
     }
 }
 @media (max-width: 555px) {
@@ -1130,11 +1140,9 @@ gap: 10px;
         padding-top: 160px;
         margin-bottom: 30px;
     }
-
     .popular-categories {
         margin-bottom: 30px;
     }
-
     .main__popular-products {
         margin-bottom: 50px;
     }
