@@ -556,15 +556,15 @@ gap: 10px;
         flex-shrink: 0;
         z-index: 2;
     }
-    .info-lang__label::after {
+    /*.info-lang__label::after {
         transform: rotate(180deg);
     }
     .info-lang__list {
-        top: -200%;
+        top: ;
     }
    .info-lang:hover .info-lang__list {
-        top:-350%;
-     }
+        top:100%;
+     }*/
     .general-header__menu-icon span,
     .general-header__menu-icon::before,
     .general-header__menu-icon::after{
