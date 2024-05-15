@@ -641,7 +641,7 @@ gap: 10px;
     flex-direction: column;
     
    }
-.info-header__container {
+.info-nav__list{
     margin-bottom: 40px;
 }
     .info-nav__list,
@@ -805,11 +805,7 @@ gap: 10px;
     width: 90%;
   }
 
-}   
-@media (max-width: 480px) {
-
-      
-}
+}   
 /* general section */
  .general-header__menu-icon::before {
      top: 0;
