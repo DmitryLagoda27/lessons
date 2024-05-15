@@ -652,8 +652,8 @@ gap: 10px;
         row-gap: 25px;
         
     }
-    .offers-navigation__list{
-            /* flex-direction: column-reverse; */
+    .info-nav__list{
+            flex-direction: column-reverse;
         }
     .info-nav__link,
     .offers-navigation__link,
