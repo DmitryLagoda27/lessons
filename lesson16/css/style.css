@@ -695,11 +695,11 @@ gap: 10px;
         flex-grow: 1;
         flex-shrink: 1;
     }
-}
-@media (max-width: 600px) {
 .general-header__button span::before {
         display: block;
     }
+}
+@media (max-width: 600px) {
     .header__general {
         padding-top: 15px;
             padding-bottom: 0px;
