@@ -746,7 +746,6 @@ gap: 10px;
    .search-header__button {
        position: relative;
        margin-left: 0px;
-       min-width: 40px;
        transition: all 0.5s;
    }
 
