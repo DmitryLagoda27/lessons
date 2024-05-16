@@ -248,7 +248,7 @@ body {
       border: 1px solid #b1b1b1;
     border-radius:  8px;
     z-index: 2;
-    max-width: 400px;
+ 
 }
 .search-header {
     flex-grow: 1;
