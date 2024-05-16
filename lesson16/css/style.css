@@ -697,6 +697,9 @@ gap: 10px;
     }
 }
 @media (max-width: 600px) {
+.general-header__button span::before {
+        display: block;
+    }
     .header__general {
         padding-top: 15px;
             padding-bottom: 0px;
