@@ -856,6 +856,7 @@ gap: 10px;
     font-size: 19px;
     line-height: 126%;
     color: #ffbc57;
+    text-decoration-skip-ink: none;
 }
 @media (any-hover: hover) {
    .products__link:hover {
