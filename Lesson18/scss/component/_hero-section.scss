@@ -1,0 +1,327 @@
+// @import "./component/animations";
+// .page {
+//   // .page__section
+//   //   &__section {
+//   //   }
+// }
+.hero-section {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  @include adaptiveValue("margin-bottom", 50, 0, 0, 1272, 450);
+
+  // .hero-section__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+    position: relative;
+    @include adaptiveValue("padding-top", 150, 100, 0, 1272, 450);
+
+    margin-bottom: 50px;
+    &::before,
+    &::after {
+      content: "";
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -10;
+      width: 480px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      background-image: linear-gradient(
+        90deg,
+        hsla(276, 100%, 50%, 0.6) 0%,
+        hsla(104, 100%, 55%, 0.6) 36.9%,
+        hsla(0, 100%, 50%, 0.6) 67.4%,
+        hsla(227, 100%, 50%, 0.6) 100%
+      );
+      opacity: 0.3;
+      filter: blur(40px);
+      animation: light-right 10s linear infinite;
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    &::before {
+      top: 0;
+      left: 0;
+      animation: light-left 10s linear infinite;
+    }
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: stretch;
+      background: url(/img/hero_section/pr_2_11zon.webp) right 20% top 20% / 15%
+          no-repeat,
+        url(/img/hero_section/ae_3_11zon.webp) right 8% top 23% / 10% no-repeat,
+        url(/img/hero_section/current_4_11zon.webp) right top 35% / 30%
+          no-repeat;
+    }
+  }
+  // .hero-section__content
+  &__content {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include adaptiveValue("row-gap", 20, 12, 0, 1272, 767.98);
+    @include adaptiveValue("max-width", 584, 362, 0, 1272, 767.98);
+    @media (max-width: 750px) {
+      flex: 1 1 100%;
+    }
+  }
+  //   .hero-section__images
+  &__images {
+    align-self: end;
+    // flex: 0 1 376px;
+    position: relative;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+    @include adaptiveValue("flex-basis", 376, 200, 0, 1272, 767.98);
+    padding-right: 88px;
+    @media (max-width: 750px) {
+      align-self: center;
+      padding-right: 0px;
+    }
+    // @media (max-width: 1090px) {
+    //   align-self: center;
+    //
+    // }
+  }
+}
+
+.content-hero {
+  @include adaptiveValue("padding-top", 120, 30, 0, 1272, 767.98);
+  @include adaptiveValue("padding-bottom", 160, 30, 0, 1272, 767.98);
+  // .content-hero__name
+  &__name {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    @include adaptiveValue("font-size", 18, 14, 0, 1272, 567.98);
+    // font-size: 18px;
+    @include adaptiveValue("line-height", 20, 15, 0, 1272, 567.98);
+    // line-height: 111%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @include adaptiveValue("max-width", 152, 110, 0, 1272, 567.98);
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        rgba(253, 29, 29, 1) 0%,
+        rgba(66, 255, 0, 1) 50%,
+        rgba(36, 0, 255, 1) 100%
+      );
+    }
+  }
+  // .content-hero__title
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    @include adaptiveValue("font-size", 80, 32, 0, 1272, 567.98);
+    @include adaptiveValue("line-height", 70, 35, 0, 1272, 567.98);
+    text-transform: uppercase;
+    color: #fff;
+    @media (max-width: 550px) {
+      max-width: 250px;
+    }
+  }
+  // .content-hero__text
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    @include adaptiveValue("font-size", 18, 14, 0, 1272, 567.98);
+    // font-size: 18px;
+    @include adaptiveValue("line-height", 39, 15, 0, 1272, 567.98);
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  // .content-hero__button
+  &__button {
+    display: inline-block;
+    font-family: var(--second-font-family);
+    font-weight: 900;
+    @include adaptiveValue("font-size", 20, 14, 0, 1272, 450);
+    @include adaptiveValue("line-height", 20, 19, 0, 1272, 567.98);
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    @include adaptiveValue("padding-top", 15, 8, 0, 1272, 450);
+    @include adaptiveValue("padding-bottom", 15, 8, 0, 1272, 450);
+    @include adaptiveValue("padding-left", 60, 40, 0, 1272, 450);
+    @include adaptiveValue("padding-right", 60, 40, 0, 1272, 450);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    background: #6f00a9;
+    @include adaptiveValue("width", 253, 173, 0, 1272, 767.98);
+    transition: all;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #3a13f8;
+        background: #5d048d;
+      }
+    }
+  }
+}
+
+.images-hero {
+  // .images-hero__lightning-left
+
+  &__lightning-left {
+    position: absolute;
+    left: 40%;
+    bottom: -3%;
+    @include adaptiveValue("width", 322, 143, 0, 1272, 767.98);
+    @include adaptiveValue("height", 286, 161, 0, 1272, 767.98);
+    overflow: hidden;
+    transform: rotate(0deg);
+
+    img {
+      aspect-ratio: 322 /286;
+      width: 100%;
+      object-fit: contain;
+    }
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  // .images-hero__letters-left
+
+  &__letters-left {
+    position: absolute;
+    left: -30%;
+    top: 5%;
+    @include adaptiveValue("width", 174, 64, 0, 1272, 767.98);
+    @include adaptiveValue("height", 174, 63, 0, 1272, 767.98);
+    max-width: 100%;
+    img {
+      aspect-ratio: 126 / 125;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  // .images-hero__avatar
+
+  &__avatar {
+    @include adaptiveValue("max-width", 376, 186, 0, 1272, 767.98);
+    @include adaptiveValue("max-height", 508, 254, 0, 1272, 767.98);
+    width: 376px;
+    height: 508px;
+
+    position: relative;
+    img {
+      display: block;
+      aspect-ratio: 376/ 508;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 750px) {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -10;
+        @include adaptiveValue("width", 190, 140, 0, 767.98, 360);
+        // width: 140px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          90deg,
+          hsla(276, 100%, 50%, 0.6) 0%,
+          hsla(104, 100%, 55%, 0.6) 36.9%,
+          hsla(0, 100%, 50%, 0.6) 67.4%,
+          hsla(227, 100%, 50%, 0.6) 100%
+        );
+        opacity: 0.3;
+        filter: blur(30px);
+        transform: scale(1.2);
+        animation: light-left 10s linear infinite;
+      }
+      &::after {
+        content: "";
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -10;
+        @include adaptiveValue("width", 190, 140, 0, 767, 360);
+        // width: 140px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          90deg,
+          hsla(276, 100%, 50%, 0.6) 0%,
+          hsla(104, 100%, 55%, 0.6) 37%,
+          hsla(0, 100%, 50%, 0.6) 67%,
+          hsla(227, 100%, 50%, 0.6) 100%
+        );
+        opacity: 0.3;
+        filter: blur(40px);
+        animation: light-right 10s linear infinite;
+      }
+    }
+  }
+  // .images-hero__lightning-right
+
+  &__lightning-right {
+    position: absolute;
+    right: 60%;
+    bottom: 0%;
+    @include adaptiveValue("width", 354, 165, 0, 1272, 767.98);
+    @include adaptiveValue("height", 315, 180, 0, 1272, 767.98);
+    // transform: rotate(-5deg);
+
+    img {
+      aspect-ratio: 354 /315;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  // .images-hero__letters-right
+
+  &__letters-right {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    @include adaptiveValue("max-width", 105, 50%, 0, 1272, 767.98);
+    @include adaptiveValue("height", 112, 50, 0, 1272, 767.98);
+    // max-width: 100%;
+
+    img {
+      object-fit: contain;
+      aspect-ratio: 70 / 80;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+}
