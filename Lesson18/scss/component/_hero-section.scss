@@ -164,8 +164,8 @@
     text-align: center;
     @include adaptiveValue("padding-top", 15, 8, 0, 1272, 650);
     @include adaptiveValue("padding-bottom", 15, 8, 0, 1272, 650);
-    @include adaptiveValue("padding-left", 60, 30, 0, 1272, 850);
-    @include adaptiveValue("padding-right", 60, 30, 0, 1272, 850);
+    @include adaptiveValue("padding-left", 60, 30, 0, 1272, 650);
+    @include adaptiveValue("padding-right", 60, 30, 0, 1272, 650);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     background: #6f00a9;
     @include adaptiveValue("width", 253, 173, 0, 1272, 767.98);
