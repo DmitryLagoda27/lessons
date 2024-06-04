@@ -313,8 +313,8 @@
     position: absolute;
     right: 2%;
     top: 15%;
-    @include adaptiveValue("max-width", 105, 50%, 0, 1272, 767.98);
-    @include adaptiveValue("height", 112, 50, 0, 1272, 767.98);
+    @include adaptiveValue("max-width", 105, 50, 0, 1272, 767.98);
+    @include adaptiveValue("height", 112, 57, 0, 1272, 767.98);
     // max-width: 100%;
 
     img {
