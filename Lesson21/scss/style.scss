@@ -1,0 +1,265 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Danfo:regular&display=swap");
+// Локальне підключення шрифтів
+@import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+@import "_mixins.scss";
+// Окремі сторінки
+// @import "_home.scss";
+// Окремі компоненти
+// @import "_header.scss";
+// @import "_footer.scss";
+// ...
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1290;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+body {
+  color: #050505;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 24px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #595858;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+[class*="__title"] {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+}
+/* ------------------------ */
+.wrapper {
+}
+.header {
+  // .header__container
+
+  &__container {
+    margin-bottom: 30px;
+    background-color: rgba(91, 141, 41, 0.787);
+  }
+
+  // .header__title
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 1px 1px aliceblue;
+  }
+}
+.page {
+  // .page__problem1
+  &__problem2,
+  &__problem3,
+  &__problem1 {
+    margin-bottom: 30px;
+  }
+
+  // .page__problem2
+
+  &__problem2 {
+  }
+
+  // .page__problem3
+
+  &__problem3 {
+  }
+}
+.problem1 {
+  // .problem1__container
+
+  &__container {
+    background-color: #8a3838c6;
+  }
+
+  // .problem1__title
+
+  &__title {
+  }
+
+  // .problem1__condition
+
+  &__condition {
+  }
+
+  // .problem1__item
+
+  &__item {
+  }
+
+  // .problem1__answer
+
+  &__answer {
+    border: 2px solid #243424;
+    border-radius: 12px;
+    padding: 8px;
+    position: relative;
+    box-shadow: 4px 4px #050505;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: none;
+      background-color: #908e8e;
+      &::after {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: coral;
+      z-index: 3;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity 0.5s;
+    }
+  }
+}
+.problem2 {
+  &__container {
+    background-color: #4f678add;
+  }
+  // .problem2__title
+
+  &__title {
+  }
+
+  // .problem2__condition
+
+  &__condition {
+  }
+
+  // .problem2__answer
+
+  &__answer {
+    border: 2px solid #243424;
+    box-shadow: 4px 4px #050505;
+    border-radius: 12px;
+    padding: 8px;
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: none;
+      background-color: #ab7a7a;
+      &::after {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(56, 114, 19);
+      z-index: 3;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity 0.5s;
+    }
+  }
+}
+.problem3 {
+  // .problem3__container
+
+  &__container {
+    background-color: #bbb8b8dd;
+    text-align: center;
+  }
+
+  // .problem3__title
+
+  &__title {
+  }
+
+  // .problem3__condition
+
+  &__condition {
+  }
+
+  // .problem3__answer
+
+  &__answer {
+    border: 2px solid #243424;
+    border-radius: 12px;
+    padding: 8px;
+    position: relative;
+    box-shadow: 4px 4px #050505;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: none;
+      background-color: #5ba240;
+      &::after {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(119, 37, 101);
+      z-index: 3;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity 0.5s;
+    }
+  }
+}
+.footer {
+  // .footer__container
+
+  &__container {
+  }
+}
+.some {
+  // .some__footer
+
+  &__footer {
+  }
+}

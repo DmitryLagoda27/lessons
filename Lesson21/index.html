@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок №21 (Основи JavaScript. Частина №1)
+				</h1>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__problem1 problem1">
+				<div class="problem1__container">
+					<h2 class="problem1__title">Задача №1</h2>
+					<span class="problem1__condition">Яка назва змінної вірна</span>
+					<ol>
+						<li class="problem1__item">let user-name</li>
+						<li class="problem1__item">let UserName</li>
+						<li class="problem1__item">let userName</li>
+					</ol>
+					<div class="problem1__answer">Відповідь: варіант №3 - let userName
+						У JS для запису змінних використовують стиль lowerCamelCase.</div>
+				</div>
+			</section>
+			<section class="page__problem2 problem2">
+				<div class="problem2__container">
+					<h2 class="problem2__title">Задача №2</h2>
+					<span class="problem2__condition">Чи буде помилка при виконанні наступної програми
+						const userName = 20
+						userName = "Іштван"
+					</span>
+					<div class="problem2__answer">
+						Відповідь: Так.
+						Неможливо призначати константі значення після її об'яви.
+					</div>
+				</div>
+			</section>
+			<section class="page__problem3 problem3">
+				<div class="problem3__container">
+					<h2 class="problem3__title">Задача №3</h2>
+					<span class="problem3__condition">Що потрапить в консоль?
+						let numOne = 20
+						let numTwo = "20"
+						let numSumm = numOne + numTwo
+						console.log(numSumm)</span>
+					<div class="problem3__answer">
+						Відповідь: '2020'.
+						У цьому випадку відбувається конкатенація рядків, а не додавання чисел, тому результатом буде
+						рядок
+						"2020".
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<span class="some__footer">Some footer</span>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
