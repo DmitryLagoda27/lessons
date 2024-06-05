@@ -107,6 +107,7 @@
       top: 50%;
       left: 17%;
       transform: translateY(50%);
+      font-family: var(--font-family);
       @include adaptiveValue("font-size", 40, 22, 0, 1272, 450);
       font-weight: 700;
       line-height: 1;
