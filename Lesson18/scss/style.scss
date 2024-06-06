@@ -1,0 +1,457 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500,900&display=swap");
+// Локальне підключення шрифтів
+@import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+
+// Окремі сторінки
+//
+
+@import "./component/animations";
+@import "./component/variables";
+@import "./component/title";
+
+@import "./component/header";
+@import "./component/hero-section";
+@import "./component/about";
+@import "./component/edit-section";
+@import "./component/testimonials";
+@import "_mixins.scss";
+// Окремі компоненти
+// @import "_header.scss";
+// @import "_footer.scss";
+// ...
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1512;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1290;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+// ==========================================================
+
+body {
+  background: rgba(0, 0, 0);
+  color: #fff;
+  font-family: "ProximaNova", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1302px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+/* header*/
+
+/* ------------------------ */
+
+// SASS - Назва препроцесора
+// SCSS - Це варіант синтаксису препроцесора SASS
+
+// Синтаксис SASS
+/*
+body
+	color: red
+	font-size: 20px;
+.block
+	width: 200px
+	border: 1px solid red
+*/
+
+// Синтаксис SСSS
+/*
+body {
+	color: red;
+	font-size: 20px;
+}
+.block {
+	width: 200px;
+	border: 1px solid red;
+}
+*/
+
+// Супер сила №1
+// Коментарі
+
+/* я потраплю в CSS  */
+// я не потраплю в CSS
+
+// Супер сила №2 *
+// Змінні
+// *CSS теж має можливість
+// використовувати змінні
+
+/*
+Назва змінної:
+1) Англійська мова
+2) стиль lowerCamelCase
+3) Адекватно відображати що містить змінна
+*/
+
+/*
+$mainColor: #fff;
+
+body {
+	color: $mainColor;
+}
+
+.block {
+	color: $mainColor;
+}
+*/
+
+// Супер сила №3 **
+// Вкладеність
+// ** Наразі, CSS теж рухається
+// до цього синтаксису
+
+// Синтаксис CSS
+//.text span {
+//	color: green;
+//}
+//.text.page__text {
+//	color: green;
+//	font-size: 40px;
+//}
+//.page .text {
+//	color: orange;
+//}
+
+// Синтаксис SCSS
+// .text {
+//   span {
+//     color: green;
+//   }
+//   &.page__text {
+//     color: green;
+//     font-size: 40px;
+//   }
+//   .page & {
+//     color: orange;
+//   }
+// }
+
+// CSS
+// .block {
+// }
+// .block__container {
+// }
+// .block__title {
+// }
+// .block__items {
+// }
+// .block__item {
+// }
+// .block__item--red {
+// }
+
+// SCSS
+// & - це амперсанд (and)
+// .block {
+//   // .block__container
+//   &__container {
+//   }
+//   // .block__title
+//   &__title {
+//   }
+//   // .block__items
+//   &__items {
+//   }
+//   // .block__item
+//   &__item {
+//     color: green;
+//     // .block__item--red
+//     &--red {
+//       color: red;
+//     }
+//   }
+// }
+
+// Вкладеність псевдоелементів,
+// псевдокласів і т.д.
+
+// CSS
+// .text::before {
+// }
+// .text::after {
+// }
+// .text:hover {
+// }
+// .text:hover::before {
+// }
+
+// SCSS
+// .text {
+//   color: green;
+//   &::before {
+//     background-color: red;
+//     content: "";
+//   }
+//   &::after {
+//   }
+//   &:hover {
+//     color: red;
+//     &::before {
+//       background-color: greened;
+//       content: "";
+//     }
+//   }
+//   &:last-child {
+//   }
+//   &:not(:last-child) {
+//   }
+//   &:nth-child(5) {
+//   }
+// }
+
+// Вкладеність медіазапитів
+
+// CSS
+// .text {
+// 	display: grid;
+// 	grid-template-columns: repeat(3, 1fr);
+// }
+// ...
+// @media (max-width: 867px) {
+// 	.text {
+// 		grid-template-columns: repeat(2, 1fr);
+// 	}
+// }
+
+// SCSS
+// .text {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   @media (max-width: 867px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// Все разом по вкладеності
+// .block {
+//   .page & {
+//     // ...
+//   }
+//   &--active {
+//     // ...
+//   }
+//   // .block__container
+//   &__container {
+//     &:hover {
+//     }
+//     span {
+//     }
+//   }
+//   // .block__title
+//   &__title {
+//     &::before {
+//     }
+//   }
+//   // .block__body
+//   &__body {
+//     @media (max-width: 850px) {
+//       //   ....
+//     }
+//   }
+//   // .block__image
+//   &__image {
+//     // .block__image--big
+//     &--big {
+//     }
+//   }
+//   // .block__content
+//   &__content {
+//     &:last-child {
+//       // ....
+//     }
+//   }
+// }
+
+// CSS
+// .page .text {
+// 	color: red;
+// }
+
+// SCSS
+// .page {
+//   .text {
+//     color: red;
+//   }
+// }
+// // АБО
+// .text {
+//   // ....
+//   // ....
+//   .page & {
+//     color: red;
+//   }
+// }
+
+// Супер сила №4
+// @extend, шаблони %
+// Перевикористання коду, використання шаблону коду
+
+// CSS
+// .button,
+// .page__button {
+// 	padding: 10px 20px;
+// 	font-size: 20px;
+// 	background-color: green;
+// }
+
+// SCSS
+// .button {
+//   padding: 10px 20px;
+//   font-size: 20px;
+//   background-color: green;
+// }
+
+// .page__button {
+//   @extend .button;
+//   padding: 20px;
+// }
+
+// // Шаблони
+// %button {
+//   padding: 5px 20px;
+//   font-size: 20px;
+//   background-color: green;
+// }
+// .page__button {
+//   @extend %button;
+//   background-color: #fff;
+// }
+
+// .block {
+//   @extend %button;
+//   background-color: #77608d;
+// }
+
+// Супер сила №5
+// @mixin та @include
+// Міксіни
+
+// Назва міксіну:
+// 1) Англійська мова
+// 2) стиль lowerCamelCase
+// 3) Адекватно відображати що містить змінна
+// @mixin box($width: 100px, $height: 500px, $bgColor: green, $borderColor: red) {
+//   width: $width;
+//   height: $height;
+//   background-color: $bgColor;
+//   border: 1px solid $borderColor;
+// }
+
+// Супер сила №6*
+// Оператори
+// Вверху файл обов'язково треба додати @use "sass:math";
+// *CSS теж має можливість використання операторів (calc)
+
+// Більше інформації
+// https://sass-lang.com/documentation/operators/string
+
+// Множення *
+// Додавання +
+// Віднімання -
+// Ділення math.div(num 1, num 2)
+
+// .block {
+// 	width: 100px - 10px;
+// 	max-width: 100px * 2;
+// 	min-width: 100px + 10px;
+// 	height: math.div(100, 200);
+// }
+
+// Інші можливості
+// @if / @else - умовне вітвлення
+// @for - цликл
+
+// ...та багато іншого https://sass-lang.com/documentation
+
+/*
+.list {
+	color: #fff;
+}
+.list__item {
+	font-size: 20px;
+	visibility: hidden;
+	transform: translate(-100%, 0);
+	opacity: 0;
+	animation: show-items 1s ease forwards;
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.list__item:nth-child(1) {
+	animation-delay: 0s;
+}
+.list__item:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+	animation-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+	animation-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+	animation-delay: 0.8s;
+}
+
+*/
+
+// $someWidth: 100;
+
+// // SCSS
+// .list {
+//   color: #fff;
+//   // .list__item
+//   &__item {
+//     font-size: 20px;
+//     visibility: hidden;
+//     transform: translate(-100%, 0);
+//     opacity: 0;
+//     animation: show-items 1s ease forwards;
+//     &:not(:last-child) {
+//       margin-bottom: 20px;
+//     }
+//     @for $i from 1 through 6 {
+//       &:nth-child(#{$i}) {
+//         $delay: ($i - 1) * 0.2;
+//         animation-delay: #{$delay}s;
+//       }
+//     }
+//   }
+//   width: #{$someWidth}px;
+// }
+
+// @keyframes show-items {
+//   0% {
+//   }
+//   100% {
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translate(0px, 0%);
+//   }
+// }
